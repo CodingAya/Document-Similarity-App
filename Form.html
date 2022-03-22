@@ -1,0 +1,21 @@
+<html>
+ <head>
+    <title> Cosine Similarity </title>
+ </head>
+ <body>
+    <h1>Welcome on board dear User! </h1>
+    <h2>You want to find out similarity score between your two documents? Please copy and paste them below : </h2>
+    <form method="POST">
+    Document 1: <textarea name="text1" rows="10" cols="30"></textarea><br><br>
+    Document 2: <textarea name="text2" rows="10" cols="30"></textarea><br><br><br>
+    <input type="Start">
+    </form>
+     {% if final%}
+     <h2>The cosine similarity between '{{ text1}}' and '{{ text2}}' is {{final}}!</h2>
+      {%else%}
+      <h2></h2>
+      {%endif%} 
+
+ </body>
+
+</html>
